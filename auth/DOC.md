@@ -30,9 +30,10 @@ Please see examples for simple examples of use.
 package grpc_auth_test
 
 import (
+    "context"
+
     "github.com/grpc-ecosystem/go-grpc-middleware/auth"
     "github.com/grpc-ecosystem/go-grpc-middleware/tags"
-    "golang.org/x/net/context"
     "google.golang.org/grpc"
     "google.golang.org/grpc/codes"
 )
@@ -78,7 +79,6 @@ func Example_serverConfig() {
 
 - [github.com/grpc-ecosystem/go-grpc-middleware](./..)
 - [github.com/grpc-ecosystem/go-grpc-middleware/util/metautils](./../util/metautils)
-- [golang.org/x/net/context](https://godoc.org/golang.org/x/net/context)
 - [google.golang.org/grpc](https://godoc.org/google.golang.org/grpc)
 - [google.golang.org/grpc/codes](https://godoc.org/google.golang.org/grpc/codes)
 

@@ -1,6 +1,7 @@
 package grpc_zap_test
 
 import (
+	"context"
 	"runtime"
 	"testing"
 
@@ -16,7 +17,6 @@ import (
 	pb_testproto "github.com/grpc-ecosystem/go-grpc-middleware/testing/testproto"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"golang.org/x/net/context"
 
 	"github.com/grpc-ecosystem/go-grpc-middleware/logging/zap"
 	"go.uber.org/zap"

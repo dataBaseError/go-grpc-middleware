@@ -23,7 +23,6 @@ Please see examples and tests for examples of use.
 
 - [github.com/grpc-ecosystem/go-grpc-middleware/tags](./../../../tags)
 - [github.com/sirupsen/logrus](https://godoc.org/github.com/sirupsen/logrus)
-- [golang.org/x/net/context](https://godoc.org/golang.org/x/net/context)
 
 ## <a name="pkg-index">Index</a>
 * [func AddFields(ctx context.Context, fields logrus.Fields)](#AddFields)
@@ -60,10 +59,11 @@ use regardless.
 package ctxlogrus_test
 
 import (
+    "context"
+
     "github.com/grpc-ecosystem/go-grpc-middleware/logging/logrus/ctxlogrus"
     "github.com/grpc-ecosystem/go-grpc-middleware/tags"
     "github.com/sirupsen/logrus"
-    "golang.org/x/net/context"
 )
 
 var logrusLogger *logrus.Logger
